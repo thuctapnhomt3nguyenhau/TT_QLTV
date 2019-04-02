@@ -47,7 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\PhanLoaiDAO.cs" />
     <Compile Include="DAO\SachDAO.cs" />
+    <Compile Include="DTO\MaSach_DTO.cs" />
+    <Compile Include="DTO\MaTheLoai_DTO.cs" />
+    <Compile Include="DTO\PhanLoaiDTO.cs" />
     <Compile Include="DTO\SachDTO.cs" />
     <Compile Include="GUI\Menu.cs">
       <SubType>Form</SubType>

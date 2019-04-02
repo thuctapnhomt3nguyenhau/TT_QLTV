@@ -21,7 +21,7 @@ namespace QLTV.DAO
 
             private DataProvider() { }
 
-            string connectionSTR = @"Data Source=DESKTOP-GE88I0K;Initial Catalog=TT_QLTV;Integrated Security=True";
+            string connectionSTR = @"Data Source=(local);Initial Catalog=TT_QLTV;Integrated Security=True";
 
             public DataTable ExecuteQuery(string query, object[] parameter = null)
             {
