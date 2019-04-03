@@ -34,14 +34,14 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboMasach = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboMaTG = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblMasangtac = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -62,14 +62,14 @@
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnThem);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.btnThoat);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.cboMasach);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cboMaTG);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblMasangtac);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -86,6 +86,7 @@
             this.btnHuy.Size = new System.Drawing.Size(52, 53);
             this.btnHuy.TabIndex = 15;
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnCapNhat
             // 
@@ -95,6 +96,7 @@
             this.btnCapNhat.Size = new System.Drawing.Size(54, 53);
             this.btnCapNhat.TabIndex = 14;
             this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnXoa
             // 
@@ -104,6 +106,7 @@
             this.btnXoa.Size = new System.Drawing.Size(52, 53);
             this.btnXoa.TabIndex = 13;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -113,6 +116,7 @@
             this.btnSua.Size = new System.Drawing.Size(53, 53);
             this.btnSua.TabIndex = 12;
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -122,13 +126,14 @@
             this.btnThem.Size = new System.Drawing.Size(54, 53);
             this.btnThem.TabIndex = 11;
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(74, 172);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtSearch.Location = new System.Drawing.Point(74, 172);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(151, 20);
+            this.txtSearch.TabIndex = 10;
             // 
             // btnSearch
             // 
@@ -138,6 +143,7 @@
             this.btnSearch.Size = new System.Drawing.Size(54, 53);
             this.btnSearch.TabIndex = 9;
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnThoat
             // 
@@ -149,13 +155,13 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // comboBox2
+            // cboMasach
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(605, 97);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(94, 21);
-            this.comboBox2.TabIndex = 7;
+            this.cboMasach.FormattingEnabled = true;
+            this.cboMasach.Location = new System.Drawing.Point(605, 97);
+            this.cboMasach.Name = "cboMasach";
+            this.cboMasach.Size = new System.Drawing.Size(94, 21);
+            this.cboMasach.TabIndex = 7;
             // 
             // label5
             // 
@@ -167,13 +173,13 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Mã Sách:";
             // 
-            // comboBox1
+            // cboMaTG
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(341, 101);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(98, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cboMaTG.FormattingEnabled = true;
+            this.cboMaTG.Location = new System.Drawing.Point(341, 101);
+            this.cboMaTG.Name = "cboMaTG";
+            this.cboMaTG.Size = new System.Drawing.Size(98, 21);
+            this.cboMaTG.TabIndex = 5;
             // 
             // label4
             // 
@@ -185,14 +191,14 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Mã Tác Giả:";
             // 
-            // label3
+            // lblMasangtac
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(167, 108);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "1";
+            this.lblMasangtac.AutoSize = true;
+            this.lblMasangtac.Location = new System.Drawing.Point(167, 108);
+            this.lblMasangtac.Name = "lblMasangtac";
+            this.lblMasangtac.Size = new System.Drawing.Size(13, 13);
+            this.lblMasangtac.TabIndex = 3;
+            this.lblMasangtac.Text = "1";
             // 
             // label2
             // 
@@ -239,16 +245,19 @@
             // 
             // MASANGTAC
             // 
+            this.MASANGTAC.DataPropertyName = "maST";
             this.MASANGTAC.HeaderText = "Mã Sáng Tác";
             this.MASANGTAC.Name = "MASANGTAC";
             // 
             // MATACGIA
             // 
+            this.MATACGIA.DataPropertyName = "maTG";
             this.MATACGIA.HeaderText = "Mã Tác Giả";
             this.MATACGIA.Name = "MATACGIA";
             // 
             // MASACH
             // 
+            this.MASACH.DataPropertyName = "maSach";
             this.MASACH.HeaderText = "Mã Sách";
             this.MASACH.Name = "MASACH";
             // 
@@ -273,20 +282,20 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblMasangtac;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboMasach;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboMaTG;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvSangTac;
         private System.Windows.Forms.DataGridViewTextBoxColumn MASANGTAC;

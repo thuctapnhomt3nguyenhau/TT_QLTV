@@ -96,7 +96,7 @@ BEGIN
 	VALUES(@TENSACH, @GIATRI)
 END
 GO
-
+ 
 --TẠO PROC SỬA:
 CREATE PROC USP_UPDATESACH
 	@MASACH INT,
@@ -133,4 +133,75 @@ BEGIN
 END
 GO
 
-    
+    -------------------------------------SANG TAC-----------------------
+	---GETALL---
+	CREATE PROC USP_SANGTAC_GETDSST
+	AS
+	    SELECT *FROM SANGTAC
+	GO
+
+	 ---INSERT----------------
+	 CREATE PROC USP_SANGTAC_INSERT
+	            @maTG int,
+				@maSach int
+	 AS
+	 BEGIN
+	    INSERT [dbo].[SANGTAC]( MATG, MASACH)
+		VALUES (@maTG,@maSach)
+	 END
+	 GO
+
+
+	 ------UPDATE-----------------
+	 CREATE PROC USP_SANGTAC_UPDATE
+	       @maST int,
+		   @maTG int,
+		   @maSach int
+	AS
+	BEGIN
+	 UPDATE [dbo].[SANGTAC]
+	 SET MATG = @maTG ,MASACH = @maSach
+	 WHERE MASANGTAC = @maST
+	END
+	GO
+
+	----------------DELETE------------------
+	CREATE PROC USP_SANGTAC_DELETE
+	     @maST INT
+
+	AS
+	BEGIN
+	   DELETE [dbo].[SANGTAC]
+	   WHERE MASANGTAC = @maST
+	END
+	GO
+
+	------------SEARCH--------------------
+	CREATE PROC USP_SANGTAC_SEARCH
+	    @SEARCH NVARCHAR(100)
+	AS
+	BEGIN
+	   SELECT MASANGTAC, MATG, MASACH
+		FROM [dbo].[SANGTAC]
+		WHERE (MASANGTAC LIKE N'%' + @SEARCH +'%')
+		OR (MATG LIKE N'%' + @SEARCH + '%')
+		OR (MASACH LIKE N'%' + @SEARCH + '%')
+	END
+	GO
+
+
+	
+	 INSERT [dbo].[TACGIA]( TENTG)
+	 VALUES (N'Nguyễn Văn A')
+	 INSERT [dbo].[TACGIA]( TENTG)
+	 VALUES (N'Hoàng Văn X')
+	 GO
+
+
+	 [dbo].[USP_INSERTSACH] N'Giáo Dục Thể Chất', '100000'
+	 GO
+	 [dbo].[USP_INSERTSACH] N'Giải Tích 1', '200000'
+	 GO
+	 SELECT *FROM [dbo].[TACGIA]
+	 SELECT *FROM [dbo].[SACH]
+	 select *from [dbo].[SANGTAC]

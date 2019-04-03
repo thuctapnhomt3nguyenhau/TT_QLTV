@@ -34,3 +34,21 @@ C:\Users\admin\Desktop\TT_NhómMaiAnh\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateRe
 C:\Users\admin\Desktop\TT_NhómMaiAnh\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\TT_NhómMaiAnh\QLTV\QLTV\obj\Debug\QLTV.exe
 C:\Users\admin\Desktop\TT_NhómMaiAnh\QLTV\QLTV\obj\Debug\QLTV.pdb
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csprojAssemblyReference.cache
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.Menu.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.MuonSach.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.NguoiMuon.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.NhanVien.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.PhanLoai.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.Sach.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.SangTac.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.TacGia.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.TheLoai.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.cache
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
+D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
