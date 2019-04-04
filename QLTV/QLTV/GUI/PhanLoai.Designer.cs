@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtkieuphanloai = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
@@ -46,8 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvPhanLoai = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtkieuphanloai = new System.Windows.Forms.TextBox();
             this.MAPHANLOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KieuPL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TENSACH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,16 +79,35 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1068, 316);
             this.panel1.TabIndex = 0;
+            // 
+            // txtkieuphanloai
+            // 
+            this.txtkieuphanloai.Location = new System.Drawing.Point(225, 165);
+            this.txtkieuphanloai.Multiline = true;
+            this.txtkieuphanloai.Name = "txtkieuphanloai";
+            this.txtkieuphanloai.Size = new System.Drawing.Size(205, 37);
+            this.txtkieuphanloai.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(60, 172);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(142, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Kiểu Phân Loại:";
             // 
             // button7
             // 
             this.button7.Image = global::QLTV.Properties.Resources.Button_Next_icon__1_4;
             this.button7.Location = new System.Drawing.Point(968, 4);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(96, 90);
             this.button7.TabIndex = 15;
@@ -99,7 +118,7 @@
             // 
             this.btnHuy.Image = global::QLTV.Properties.Resources.huy;
             this.btnHuy.Location = new System.Drawing.Point(902, 217);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(91, 86);
             this.btnHuy.TabIndex = 14;
@@ -110,7 +129,7 @@
             // 
             this.btnCapNhat.Image = global::QLTV.Properties.Resources.capnhat;
             this.btnCapNhat.Location = new System.Drawing.Point(795, 217);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(99, 86);
             this.btnCapNhat.TabIndex = 13;
@@ -121,7 +140,7 @@
             // 
             this.btnXoa.Image = global::QLTV.Properties.Resources.xoa;
             this.btnXoa.Location = new System.Drawing.Point(691, 217);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(96, 86);
             this.btnXoa.TabIndex = 12;
@@ -132,7 +151,7 @@
             // 
             this.btnSua.Image = global::QLTV.Properties.Resources.sua;
             this.btnSua.Location = new System.Drawing.Point(583, 217);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(100, 86);
             this.btnSua.TabIndex = 11;
@@ -143,7 +162,7 @@
             // 
             this.btnThem.Image = global::QLTV.Properties.Resources.them;
             this.btnThem.Location = new System.Drawing.Point(486, 217);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(89, 86);
             this.btnThem.TabIndex = 10;
@@ -153,7 +172,7 @@
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(64, 263);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(202, 22);
             this.txtSearch.TabIndex = 9;
@@ -162,7 +181,7 @@
             // 
             this.btnSearch.Image = global::QLTV.Properties.Resources.search_icon1;
             this.btnSearch.Location = new System.Drawing.Point(274, 235);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 68);
             this.btnSearch.TabIndex = 8;
@@ -173,7 +192,7 @@
             // 
             this.cbomatheloaiPL.FormattingEnabled = true;
             this.cbomatheloaiPL.Location = new System.Drawing.Point(875, 168);
-            this.cbomatheloaiPL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbomatheloaiPL.Margin = new System.Windows.Forms.Padding(4);
             this.cbomatheloaiPL.Name = "cbomatheloaiPL";
             this.cbomatheloaiPL.Size = new System.Drawing.Size(180, 24);
             this.cbomatheloaiPL.TabIndex = 7;
@@ -193,7 +212,7 @@
             // 
             this.cbomasachPL.FormattingEnabled = true;
             this.cbomasachPL.Location = new System.Drawing.Point(545, 168);
-            this.cbomasachPL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbomasachPL.Margin = new System.Windows.Forms.Padding(4);
             this.cbomasachPL.Name = "cbomasachPL";
             this.cbomasachPL.Size = new System.Drawing.Size(175, 24);
             this.cbomasachPL.TabIndex = 5;
@@ -238,15 +257,15 @@
             this.label1.Location = new System.Drawing.Point(135, 34);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 36);
+            this.label1.Size = new System.Drawing.Size(240, 36);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Phân Loại";
+            this.label1.Text = "Phân Loại Sách";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLTV.Properties.Resources.Phân_loại1;
             this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(123, 117);
             this.pictureBox1.TabIndex = 0;
@@ -263,29 +282,10 @@
             this.TENSACH,
             this.TENTHELOAI});
             this.dgvPhanLoai.Location = new System.Drawing.Point(-1, 311);
-            this.dgvPhanLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPhanLoai.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPhanLoai.Name = "dgvPhanLoai";
             this.dgvPhanLoai.Size = new System.Drawing.Size(1068, 250);
             this.dgvPhanLoai.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(60, 172);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 20);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Kiểu Phân Loại:";
-            // 
-            // txtkieuphanloai
-            // 
-            this.txtkieuphanloai.Location = new System.Drawing.Point(225, 165);
-            this.txtkieuphanloai.Multiline = true;
-            this.txtkieuphanloai.Name = "txtkieuphanloai";
-            this.txtkieuphanloai.Size = new System.Drawing.Size(205, 37);
-            this.txtkieuphanloai.TabIndex = 17;
             // 
             // MAPHANLOAI
             // 
@@ -318,7 +318,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dgvPhanLoai);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PhanLoai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phân Loại Sách";
