@@ -1,4 +1,6 @@
 ﻿CREATE DATABASE TT_QLTV
+GO
+
 USE TT_QLTV
 GO
 CREATE TABLE SACH (
@@ -6,12 +8,14 @@ CREATE TABLE SACH (
 	TENSACH NVARCHAR(50),
 	 GIATRI NVARCHAR(20)
 )
+go
 CREATE TABLE NHANVIEN (
     MANV INT IDENTITY(1,1) NOT NULL,
 	HOTEN NVARCHAR(40),
 	NS DATE,
 	GT NVARCHAR(4)
 )
+go
 CREATE TABLE NGUOIMUON(
     MANM INT IDENTITY(1,1) NOT NULL,
 	HOTEN NVARCHAR(40),
@@ -205,3 +209,98 @@ GO
 	 SELECT *FROM [dbo].[TACGIA]
 	 SELECT *FROM [dbo].[SACH]
 	 select *from [dbo].[SANGTAC]
+
+------------------Tác giả---------------------------
+-- 1. GetAll
+create procedure SP_TacGia_GetAll
+as
+begin
+	select * from TACGIA
+end
+go
+-- 2. Insert
+create procedure SP_TacGia_Insert 
+	@tenTacGia nvarchar(50)
+as
+begin
+	insert into TACGIA(TENTG)
+	values(@tenTacGia)
+end
+go
+-- 3. Delete
+create procedure SP_TacGia_Delete
+	@maTacGia int
+as
+begin
+	delete TACGIA
+	where MATG = @maTacGia
+end
+go
+-- 4. Update 
+create procedure SP_TacGia_Update
+	@maTacGia int, @tenTacGia nvarchar(50)
+as
+begin
+	update TACGIA
+	set TENTG = @tenTacGia
+	where MATG = @maTacGia
+end
+go
+-- 5. Search tac gia
+create procedure SP_TacGia_Search
+	@searchString nvarchar(100)
+as
+begin
+	select * from TACGIA
+	where TENTG like N'%'+@searchString+'%'
+	or MATG like N'%'+@searchString+'%'
+end
+go
+--------------------- Thể loại -------------------
+-- 1. GetAll
+create procedure SP_TheLoai_GetAll
+as
+begin
+	select * from THELOAI
+end
+go
+-- 2. Insert
+create procedure SP_TheLoai_Insert
+	@tenTheLoai nvarchar(50)
+as
+begin
+	insert into THELOAI
+	values(@tenTheLoai)
+end
+go
+-- 3. delete
+create procedure SP_TheLoai_Delete 
+	@maTheLoai int
+as
+begin
+	delete THELOAI
+	where MATHELOAI = @maTheLoai
+end
+go
+
+-- 4. Update
+create procedure SP_TheLoai_Update
+	@maTheLoai int, @tenTheLoai nvarchar(50)
+as
+begin
+	update THELOAI
+	set TENTHELOAI = @tenTheLoai
+	where MATHELOAI = @maTheLoai
+end
+go
+
+-- 5. Search
+create procedure SP_TheLoai_Search
+	@searchString nvarchar(100)
+as
+begin
+	select * from THELOAI
+	where MATHELOAI like N'%'+@searchString+'%'
+	or TENTHELOAI like N'%'+@searchString+'%'
+end
+go
