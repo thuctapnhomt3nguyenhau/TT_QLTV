@@ -47,10 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\NguoiMuonDAO.cs" />
     <Compile Include="DAO\SachDAO.cs" />
     <Compile Include="DAO\SangTacDAO.cs" />
     <Compile Include="DTO\MASACH_DTO.cs" />
     <Compile Include="DTO\MATG_DTO.cs" />
+    <Compile Include="DTO\NguoiMuonDTO.cs" />
     <Compile Include="DTO\SachDTO.cs" />
     <Compile Include="DTO\SangTacDTO.cs" />
     <Compile Include="GUI\Menu.cs">

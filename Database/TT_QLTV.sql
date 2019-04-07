@@ -205,3 +205,65 @@ GO
 	 SELECT *FROM [dbo].[TACGIA]
 	 SELECT *FROM [dbo].[SACH]
 	 select *from [dbo].[SANGTAC]
+
+--------------------------------------------------------NGUOI MUON--------------------------------------------------------------
+GO
+CREATE PROC USP_GetNguoiMuon
+AS
+SELECT * FROM dbo.NGUOIMUON
+GO
+
+INSERT dbo.NGUOIMUON
+        ( HOTEN, NS, GT, DC, SDT )
+VALUES  ( N'a', -- HOTEN - nvarchar(40)
+          GETDATE(), -- NS - date
+          N'Nữ', -- GT - nvarchar(4)
+          N'122', -- DC - nvarchar(100)
+          N'12132'  -- SDT - nchar(15)
+          )
+GO
+CREATE PROC USP_InsertNguoiMuon
+@hoten NVARCHAR(40),
+@ngaysinh DATE,
+@gioitinh NVARCHAR(4),
+@diachi NVARCHAR(100),
+@sdt VARCHAR(11)
+AS
+BEGIN
+	INSERT dbo.NGUOIMUON
+	        ( HOTEN, NS, GT, DC, SDT )
+	VALUES  ( @hoten, -- HOTEN - nvarchar(40)
+	          @ngaysinh, -- NS - date
+	          @gioitinh, -- GT - nvarchar(4)
+	          @diachi, -- DC - nvarchar(100)
+	          @sdt  -- SDT - nchar(15)
+	          )
+END
+GO
+CREATE PROC USP_UpdateNguoiMuon
+@manm INT,
+@hoten NVARCHAR(40),
+@ngaysinh DATE,
+@gioitinh NVARCHAR(4),
+@diachi NVARCHAR(100),
+@sdt VARCHAR(11)
+AS
+BEGIN
+	UPDATE dbo.NGUOIMUON SET HOTEN=@hoten,NS=@ngaysinh,GT=@gioitinh,DC=@diachi,SDT=@sdt WHERE MANM=@manm
+END
+GO
+CREATE PROC USP_DeleteNguoiMuon
+@manm INT
+AS
+BEGIN
+	DELETE FROM dbo.NGUOIMUON WHERE MANM=@manm
+END
+GO
+CREATE PROC USP_SearchNguoiMuon
+@search NVARCHAR(100)
+AS
+BEGIN
+	SELECT * FROM dbo.NGUOIMUON WHERE MANM LIKE N'%'+@search+'%' OR HOTEN LIKE N'%'+@search+'%' OR 
+									  NS LIKE N'%'+@search+'%' OR GT LIKE N'%'+@search+'%' OR 
+									  DC LIKE N'%'+@search+'%' OR SDT LIKE N'%'+@search+'%'
+END
