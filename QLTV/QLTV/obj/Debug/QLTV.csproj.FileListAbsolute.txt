@@ -52,8 +52,6 @@ D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.G
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
-<<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\admin\Desktop\TTN_QLTV\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
 C:\Users\admin\Desktop\TTN_QLTV\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
 C:\Users\admin\Desktop\TTN_QLTV\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
@@ -72,7 +70,6 @@ C:\Users\admin\Desktop\TTN_QLTV\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.Generate
 C:\Users\admin\Desktop\TTN_QLTV\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\TTN_QLTV\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
 C:\Users\admin\Desktop\TTN_QLTV\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
-=======
 C:\Users\hieun\Desktop\thuc-tap-nhom\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
 C:\Users\hieun\Desktop\thuc-tap-nhom\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
 C:\Users\hieun\Desktop\thuc-tap-nhom\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
@@ -91,8 +88,6 @@ C:\Users\hieun\Desktop\thuc-tap-nhom\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.Gen
 C:\Users\hieun\Desktop\thuc-tap-nhom\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
 C:\Users\hieun\Desktop\thuc-tap-nhom\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
 C:\Users\hieun\Desktop\thuc-tap-nhom\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
->>>>>>> NguyenHieu
-=======
 D:\TT_Nhóm\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
 D:\TT_Nhóm\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
 D:\TT_Nhóm\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
@@ -111,4 +106,21 @@ D:\TT_Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.cache
 D:\TT_Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
 D:\TT_Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
 D:\TT_Nhóm\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
->>>>>>> NguyenHau
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csprojAssemblyReference.cache
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.Menu.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.MuonSach.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.NguoiMuon.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.NhanVien.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.PhanLoai.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.Sach.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.SangTac.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.TacGia.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.GUI.TheLoai.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.cache
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
+E:\TT_Nhom\QuanLy_ThuVien\TT_QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
