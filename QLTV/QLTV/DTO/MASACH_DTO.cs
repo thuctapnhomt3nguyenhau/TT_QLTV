@@ -9,16 +9,19 @@ namespace QLTV.DTO
 {
     class MASACH_DTO
     {
-        private int maSach;
+        private int maSach;    
 
         public int MaSach { get => maSach; set => maSach = value; }
-        public MASACH_DTO(int maSach)
+      
+        public MASACH_DTO(int maSach, string tenSach)
         {
-            this.maSach = maSach;
+            this.maSach = maSach;           
         }
         public MASACH_DTO(DataRow row)
         {
             Int32.TryParse(row["MASACH"].ToString(), out this.maSach);
+      
         }
+        public MASACH_DTO() { }
     }
 }

@@ -37,7 +37,7 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.txtDonGia = new System.Windows.Forms.TextBox();
+            this.txtGiaTri = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTenSach = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,6 +46,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvSach = new System.Windows.Forms.DataGridView();
+            this.MASACH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENSACH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GIATRI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSach)).BeginInit();
@@ -62,7 +65,7 @@
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.btnThoat);
-            this.panel1.Controls.Add(this.txtDonGia);
+            this.panel1.Controls.Add(this.txtGiaTri);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtTenSach);
             this.panel1.Controls.Add(this.label4);
@@ -83,6 +86,7 @@
             this.btnHuy.Size = new System.Drawing.Size(53, 51);
             this.btnHuy.TabIndex = 15;
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnCapNhat
             // 
@@ -92,6 +96,7 @@
             this.btnCapNhat.Size = new System.Drawing.Size(53, 51);
             this.btnCapNhat.TabIndex = 14;
             this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnXoa
             // 
@@ -101,6 +106,7 @@
             this.btnXoa.Size = new System.Drawing.Size(53, 51);
             this.btnXoa.TabIndex = 13;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -110,6 +116,7 @@
             this.btnSua.Size = new System.Drawing.Size(54, 51);
             this.btnSua.TabIndex = 12;
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -119,6 +126,7 @@
             this.btnThem.Size = new System.Drawing.Size(53, 51);
             this.btnThem.TabIndex = 11;
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtSearch
             // 
@@ -135,6 +143,7 @@
             this.btnSearch.Size = new System.Drawing.Size(53, 51);
             this.btnSearch.TabIndex = 9;
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnThoat
             // 
@@ -146,12 +155,12 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // txtDonGia
+            // txtGiaTri
             // 
-            this.txtDonGia.Location = new System.Drawing.Point(605, 99);
-            this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(82, 20);
-            this.txtDonGia.TabIndex = 7;
+            this.txtGiaTri.Location = new System.Drawing.Point(605, 99);
+            this.txtGiaTri.Name = "txtGiaTri";
+            this.txtGiaTri.Size = new System.Drawing.Size(82, 20);
+            this.txtGiaTri.TabIndex = 7;
             // 
             // label5
             // 
@@ -159,9 +168,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(532, 103);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.Size = new System.Drawing.Size(59, 16);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Đơn Giá:";
+            this.label5.Text = "Giá Trị:";
             // 
             // txtTenSach
             // 
@@ -223,10 +232,32 @@
             this.dgvSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSach.BackgroundColor = System.Drawing.Color.PapayaWhip;
             this.dgvSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MASACH,
+            this.TENSACH,
+            this.GIATRI});
             this.dgvSach.Location = new System.Drawing.Point(1, 222);
             this.dgvSach.Name = "dgvSach";
             this.dgvSach.Size = new System.Drawing.Size(799, 225);
             this.dgvSach.TabIndex = 1;
+            // 
+            // MASACH
+            // 
+            this.MASACH.DataPropertyName = "MASACH";
+            this.MASACH.HeaderText = "Mã Sách";
+            this.MASACH.Name = "MASACH";
+            // 
+            // TENSACH
+            // 
+            this.TENSACH.DataPropertyName = "TENSACH";
+            this.TENSACH.HeaderText = "Tên Sách";
+            this.TENSACH.Name = "TENSACH";
+            // 
+            // GIATRI
+            // 
+            this.GIATRI.DataPropertyName = "GIATRI";
+            this.GIATRI.HeaderText = "Giá Trị";
+            this.GIATRI.Name = "GIATRI";
             // 
             // Sach
             // 
@@ -256,7 +287,7 @@
         private System.Windows.Forms.TextBox txtTenSach;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.TextBox txtDonGia;
+        private System.Windows.Forms.TextBox txtGiaTri;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Button btnXoa;
@@ -265,5 +296,8 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MASACH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENSACH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GIATRI;
     }
 }

@@ -71,7 +71,7 @@ namespace QLTV.DAO
         public List<SangTacDTO> SearchST(string str)
         {
             List<SangTacDTO> SangTacList = new List<SangTacDTO>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC USP_SearchKhachHang @search ", new object[] { str });
+            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC USP_SANGTAC_SEARCH @search ", new object[] { str });
             foreach (DataRow item in data.Rows)
             {
                 SangTacDTO Stac = new SangTacDTO(item);

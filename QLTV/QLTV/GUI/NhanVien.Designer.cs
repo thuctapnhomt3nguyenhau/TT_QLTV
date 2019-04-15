@@ -35,12 +35,12 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radNu = new System.Windows.Forms.RadioButton();
+            this.radNam = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,12 +67,12 @@
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnThem);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.radNu);
+            this.panel1.Controls.Add(this.radNam);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.dtpNgaySinh);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtHoTen);
             this.panel1.Controls.Add(this.label3);
@@ -103,6 +103,7 @@
             this.btnHuy.Size = new System.Drawing.Size(52, 53);
             this.btnHuy.TabIndex = 17;
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnCapNhat
             // 
@@ -112,6 +113,7 @@
             this.btnCapNhat.Size = new System.Drawing.Size(56, 53);
             this.btnCapNhat.TabIndex = 16;
             this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnXoa
             // 
@@ -121,6 +123,7 @@
             this.btnXoa.Size = new System.Drawing.Size(53, 53);
             this.btnXoa.TabIndex = 15;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -130,6 +133,7 @@
             this.btnSua.Size = new System.Drawing.Size(54, 53);
             this.btnSua.TabIndex = 14;
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -139,14 +143,14 @@
             this.btnThem.Size = new System.Drawing.Size(56, 53);
             this.btnThem.TabIndex = 13;
             this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.button2_Click);
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 222);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 20);
-            this.textBox1.TabIndex = 12;
+            this.txtSearch.Location = new System.Drawing.Point(92, 222);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(206, 20);
+            this.txtSearch.TabIndex = 12;
             // 
             // btnSearch
             // 
@@ -156,28 +160,29 @@
             this.btnSearch.Size = new System.Drawing.Size(47, 44);
             this.btnSearch.TabIndex = 11;
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // radioButton2
+            // radNu
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(581, 148);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radNu.AutoSize = true;
+            this.radNu.Location = new System.Drawing.Point(581, 148);
+            this.radNu.Name = "radNu";
+            this.radNu.Size = new System.Drawing.Size(39, 17);
+            this.radNu.TabIndex = 10;
+            this.radNu.TabStop = true;
+            this.radNu.Text = "Nữ";
+            this.radNu.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radNam
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(527, 148);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radNam.AutoSize = true;
+            this.radNam.Location = new System.Drawing.Point(527, 148);
+            this.radNam.Name = "radNam";
+            this.radNam.Size = new System.Drawing.Size(47, 17);
+            this.radNam.TabIndex = 9;
+            this.radNam.TabStop = true;
+            this.radNam.Text = "Nam";
+            this.radNam.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -189,12 +194,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Giới Tính:";
             // 
-            // dateTimePicker1
+            // dtpNgaySinh
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(535, 111);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(179, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(535, 111);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(179, 20);
+            this.dtpNgaySinh.TabIndex = 7;
             // 
             // label4
             // 
@@ -212,7 +217,6 @@
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(177, 20);
             this.txtHoTen.TabIndex = 5;
-            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // label3
             // 
@@ -223,7 +227,6 @@
             this.label3.Size = new System.Drawing.Size(63, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Họ Tên:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblMaNV
             // 
@@ -243,7 +246,6 @@
             this.label2.Size = new System.Drawing.Size(108, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mã Nhân Viên:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -281,21 +283,25 @@
             // 
             // MANHANVIEN
             // 
+            this.MANHANVIEN.DataPropertyName = "MANV";
             this.MANHANVIEN.HeaderText = "Mã Nhân Viên";
             this.MANHANVIEN.Name = "MANHANVIEN";
             // 
             // HOTEN
             // 
+            this.HOTEN.DataPropertyName = "HOTEN";
             this.HOTEN.HeaderText = "Họ Tên";
             this.HOTEN.Name = "HOTEN";
             // 
             // NGAYSINH
             // 
+            this.NGAYSINH.DataPropertyName = "NGAYSINH";
             this.NGAYSINH.HeaderText = "Ngày Sinh";
             this.NGAYSINH.Name = "NGAYSINH";
             // 
             // GIOITINH
             // 
+            this.GIOITINH.DataPropertyName = "GIOITINH";
             this.GIOITINH.HeaderText = "Giới Tính";
             this.GIOITINH.Name = "GIOITINH";
             // 
@@ -326,12 +332,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radNam;
+        private System.Windows.Forms.RadioButton radNu;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;

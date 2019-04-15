@@ -30,8 +30,8 @@ namespace QLTV.DTO
         {
             Int32.TryParse(row["MANV"].ToString(), out this.maNV);
             this.hoTen = row["HOTEN"].ToString();
-            this.ngaySinh = (DateTime)row["NGAYSINH"];        
-            this.gioiTinh = row["GIOITINH"].ToString();     
+            this.ngaySinh = (DateTime)row["NS"];
+            this.gioiTinh = row["GT"].ToString();     
         }
     }
 }

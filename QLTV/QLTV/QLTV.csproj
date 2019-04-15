@@ -47,10 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\Datatable.cs" />
+    <Compile Include="DAO\MuonSachDAO.cs" />
+    <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\SachDAO.cs" />
     <Compile Include="DAO\SangTacDAO.cs" />
+    <Compile Include="DTO\Datarow.cs" />
+    <Compile Include="DTO\MANM_DTO.cs" />
+    <Compile Include="DTO\MANV_DTO.cs" />
     <Compile Include="DTO\MASACH_DTO.cs" />
     <Compile Include="DTO\MATG_DTO.cs" />
+    <Compile Include="DTO\MuonSachDTO.cs" />
+    <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="DTO\SachDTO.cs" />
     <Compile Include="DTO\SangTacDTO.cs" />
     <Compile Include="GUI\Menu.cs">
