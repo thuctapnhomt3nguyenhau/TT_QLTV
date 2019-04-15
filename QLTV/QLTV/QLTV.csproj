@@ -52,15 +52,22 @@
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\SachDAO.cs" />
     <Compile Include="DAO\SangTacDAO.cs" />
+<<<<<<< HEAD
     <Compile Include="DTO\Datarow.cs" />
     <Compile Include="DTO\MANM_DTO.cs" />
     <Compile Include="DTO\MANV_DTO.cs" />
+=======
+    <Compile Include="DAO\TacGiaDAO.cs" />
+    <Compile Include="DAO\TheLoaiDAO.cs" />
+>>>>>>> NguyenHieu
     <Compile Include="DTO\MASACH_DTO.cs" />
     <Compile Include="DTO\MATG_DTO.cs" />
     <Compile Include="DTO\MuonSachDTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="DTO\SachDTO.cs" />
     <Compile Include="DTO\SangTacDTO.cs" />
+    <Compile Include="DTO\TacGiaDTO.cs" />
+    <Compile Include="DTO\TheLoaiDTO.cs" />
     <Compile Include="GUI\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
