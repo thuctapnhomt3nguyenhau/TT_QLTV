@@ -1,26 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace QLTV.DTO
 {
-    class MaSach_DTO
+    class MASACH_DTO
     {
-        private int maSach;
+        private int maSach;    
 
         public int MaSach { get => maSach; set => maSach = value; }
-
-        public MaSach_DTO(int maSach)
+      
+        public MASACH_DTO(int maSach, string tenSach)
         {
-            this.maSach = maSach;
+            this.maSach = maSach;           
         }
-
-        public MaSach_DTO(DataRow row)
+        public MASACH_DTO(DataRow row)
         {
             Int32.TryParse(row["MASACH"].ToString(), out this.maSach);
+      
         }
+        public MASACH_DTO() { }
     }
 }
