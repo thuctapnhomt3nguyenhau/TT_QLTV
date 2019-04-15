@@ -211,7 +211,6 @@ GO
 	 SELECT *FROM [dbo].[TACGIA]
 	 SELECT *FROM [dbo].[SACH]
 	 select *from [dbo].[SANGTAC]
-<<<<<<< HEAD
 	 ----Nhân Viên-----
 CREATE PROC USP_GETNV
 AS 
@@ -446,7 +445,6 @@ begin
 	or TENTHELOAI like N'%'+@searchString+'%'
 end
 go
-=======
 
 --------------------------------------------------------NGUOI MUON--------------------------------------------------------------
 GO
@@ -509,4 +507,3 @@ BEGIN
 									  NS LIKE N'%'+@search+'%' OR GT LIKE N'%'+@search+'%' OR 
 									  DC LIKE N'%'+@search+'%' OR SDT LIKE N'%'+@search+'%'
 END
->>>>>>> NguyenHau
