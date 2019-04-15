@@ -47,9 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+<<<<<<< HEAD
     <Compile Include="DAO\Datatable.cs" />
     <Compile Include="DAO\MuonSachDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
+=======
+    <Compile Include="DAO\NguoiMuonDAO.cs" />
+>>>>>>> NguyenHau
     <Compile Include="DAO\SachDAO.cs" />
     <Compile Include="DAO\SangTacDAO.cs" />
 <<<<<<< HEAD
@@ -62,8 +66,12 @@
 >>>>>>> NguyenHieu
     <Compile Include="DTO\MASACH_DTO.cs" />
     <Compile Include="DTO\MATG_DTO.cs" />
+<<<<<<< HEAD
     <Compile Include="DTO\MuonSachDTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
+=======
+    <Compile Include="DTO\NguoiMuonDTO.cs" />
+>>>>>>> NguyenHau
     <Compile Include="DTO\SachDTO.cs" />
     <Compile Include="DTO\SangTacDTO.cs" />
     <Compile Include="DTO\TacGiaDTO.cs" />
